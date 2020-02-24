@@ -58,6 +58,14 @@ const initializeDetailButtonEvents = () => {
             theDialog.showModal()
         }
     )
+
+    document.querySelector("#button--lips").addEventListener(
+        "click",
+        theClickEvent => {
+            const theDialog = document.querySelector("#details--lips")
+            theDialog.showModal()
+        }
+    )
 }
 
 export default initializeDetailButtonEvents
