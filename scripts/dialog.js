@@ -57,6 +57,15 @@ const initializeDetailButtonEvents = () => {
         }
     )
 
+    // Show Dapple's details when the button is clicked
+    document.querySelector("#button--dapple").addEventListener(
+        "click",
+        theClickEvent => {
+            const theDialog = document.querySelector("#details--dapple")
+            theDialog.showModal()
+        }
+    )
+
     // Show Simba's details when the button is clicked
     document.querySelector("#button--simba").addEventListener(
         "click",
